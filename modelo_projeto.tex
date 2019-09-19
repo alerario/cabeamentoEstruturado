@@ -356,7 +356,7 @@ Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90.
 	\label{fig3}
 \end{figure}
 
-Você também pode inserir páginas de outro tamanho em seu texto. Isto irá ajudar a inserir imagens maiores, como as desenvolvidas em CAD. Segue um exemplo na figura \ref{fig4}.
+Você também pode inserir páginas de outro tamanho em seu texto. Isto irá ajudar a inserir imagens maiores, como as desenvolvidas em CAD. Segue um exemplo na figura \ref{fig4} e figura \ref{fig5}.
 
 
 %inicio dos comandos para criar uma nova pagina A3
@@ -378,18 +378,41 @@ Você também pode inserir páginas de outro tamanho em seu texto. Isto irá aju
 \recalctypearea
 %-- reinicio em A4 
 
+
+%inicio dos comandos para criar uma nova pagina A3 horizontal
+\clearpage
+\KOMAoptions{paper=a3, paper=landscape, DIV=20}
+\recalctypearea
+
+	
+\begin{figure}
+%	\centering
+	\noindent\makebox[\textwidth][c]{
+		\includegraphics[width=\textwidth]{fig3}
+	}
+	\caption{Exemplo de figura inserida em uma página A3 no formato horizontal}
+	\label{fig5}
+\end{figure}
+
+%Retornar ao formato A4
+\clearpage
+\KOMAoptions{paper=a4, paper=portrait, DIV=15}
+\recalctypearea
+%-- reinicio em A4 
+
+
 \subsubsection{Resumo gráfico}
 
 Você pode optar por fazer um resumo no formato de mapa mental/conceitual. 
 Aqui foi utilizado o site https://app.mindmup.com para gerar o mapa.
 
-Para utilizar o resumo gráfico, remova o texto da seção resumo (linha 137) e inclua o código para inserir a figura, conforme figura \ref{fig5}
+Para utilizar o resumo gráfico, remova o texto da seção resumo (linha 137) e inclua o código para inserir a figura, conforme figura \ref{fig6}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth,height=5cm,keepaspectratio]{fig4}
 	\caption{Exemplo de resumo gráfico}
-	\label{fig5}	
+	\label{fig6}	
 \end{figure}
 
 %% ***********************************************************************
