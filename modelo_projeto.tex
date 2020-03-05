@@ -24,6 +24,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage[ddmmyyyy]{datetime}
+\usepackage{pdfpages}
 \addto\captionsenglish{%
 	\renewcommand\tablename{Tabela}
 	\renewcommand\figurename{Figura}
@@ -415,6 +416,11 @@ Para utilizar o resumo gráfico, remova o texto da seção resumo (linha 137) e 
 	\label{fig6}	
 \end{figure}
 
+\subsubsection{Inserir PDF}
+
+Para inserir um arquivo pdf em seu texto utilize o comando includepdf. O arquivo será mapeado no layout corrente.
+
+\includepdf{cabling.pdf}
 %% ***********************************************************************
 %% === ate aqui    =====  ================================================
 %% ***********************************************************************
